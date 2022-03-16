@@ -2,8 +2,8 @@
 
 source 'https://rubygems.org'
 
-gem 'nokogiri'
-gem 'rails', '~> 5.2'
+gem 'nokogiri', '>= 1.13.2'
+gem 'rails', '~> 5.2', '>= 5.2.6.3'
 
 # For appdata redirections (https -> http)
 gem 'open_uri_redirections'
@@ -48,7 +48,7 @@ group :development do
 end
 
 group :production do
-  gem 'puma'
+  gem 'puma', '>= 4.3.11'
 end
 
 group :test do
